@@ -12,8 +12,8 @@ public class EmployeeAPI {
 	private String name ;
 	private String gender ;
 	private int age ;
-	private double salary;
-	public EmployeeAPI(String id,String name,int age,String gender,double salary) {
+	private int salary;
+	public EmployeeAPI(String id,String name,int age,String gender,int salary) {
 		this.id = id ;
 		this.name = name;
 		this.age = age ;

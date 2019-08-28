@@ -10,10 +10,31 @@ package com.tw.apistackbase.controller;
 //DELETE    /companies/1  # 删除某个特定的公司
 
 public class CompanyAPI {
+
 	private String companyName ;
+	public String companyId ;
+
 	private int employeesNumber ;
-	public CompanyAPI(String companyName,int employeesNumber) {
+	public CompanyAPI( ) {
+		
+	}
+
+	public CompanyAPI(String companyId,String companyName,int employeesNumber) {
 		this.companyName = companyName ;
 		this.employeesNumber = employeesNumber ;
+		this.companyId = companyId ;
+
+	}
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+	public int getEmployeesNumber() {
+		return employeesNumber;
+	}
+	public void setEmployeesNumber(int employeesNumber) {
+		this.employeesNumber = employeesNumber;
 	}
 }
